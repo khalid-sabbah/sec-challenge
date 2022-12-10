@@ -1,0 +1,130 @@
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+:root{
+    --fontsize:18px;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+   
+}
+.container{
+    padding: 20px;
+    border-radius: 15px;
+width: fit-content;
+margin: 50px auto;
+background-color: hsl(216, 50%, 16%);
+position: relative;
+}
+.imagee{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+img{
+    width: 300px ;
+    border-radius: 10px;
+}
+ p.one{
+    color:  hsl(215, 51%, 70%);
+    font-size: var(--fontsize);
+    width: 280px;
+}
+h1{
+    color: white;
+font-family: sans-serif;
+font-size: 18px;
+transform: translateY(8px);
+}
+[alt="avatar"]{
+    width: 30px;
+    border: 1px white solid;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+}
+p.two{
+    color:hsl(215, 51%, 70%) ;
+    display: inline-block;
+    transform: translate(47px, -1px);
+    font-size: var(--fontsize);
+}
+.span{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+   
+}
+span.one{
+    color:hsl(178, 100%, 50%);
+    transform: translateX(15px);
+}
+span.two{
+    color: hsl(215, 51%, 70%) ;
+}
+span.one,
+span.two{
+    font-size: var(--fontsize);
+    
+    
+}
+hr{
+   margin-top: 20px;
+   border: hsl(215, 51%, 70%) 1px solid;
+   opacity: 0.1;
+}
+h1:hover{
+    color:hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
+.jules{
+color: white;
+font-size: var(--fontsize);
+}
+.jules:hover{
+    color: hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
+.imagee{
+    position: relative;
+}
+.imagee div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: hsl(178, 100%, 50%,50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    opacity: 0;
+}
+.imagee div:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.icon{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+[class~=fa-brands]{
+    position: absolute;
+    width: 50px;
+    color: hsl(178, 100%, 50%);
+}
+[title="clock"]
+{
+    position: absolute;
+    color: hsl(215, 51%, 70%) ;
+    transform: translate(200px , 1px);
+}
